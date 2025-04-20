@@ -1,5 +1,6 @@
 const content = document.getElementById("content");
+const links = document.querySelectorAll("links a");
 
-content.innerHTML = `<p>Home da Página  </p>`;
-
-const classTxt = document.getElementsByClassName("txt");
+for (link of links) {
+  link.classList.add("feature-links");
+}
